@@ -31,6 +31,7 @@
 #define __NR_io_uring_register	427
 #endif
 
+// MEMO: ここ別のチュートでも見たsyscallと一緒かな
 int sys_io_uring_setup(unsigned entries, struct io_uring_params *p) {
     return syscall(__NR_io_uring_setup, entries, p);
 }
